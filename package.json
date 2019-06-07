@@ -4,7 +4,9 @@
   "description": "Social network for developers",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server",
+    "server": "nodemon server"
   },
   "author": "Gabriel Michel",
   "license": "ISC",
@@ -17,5 +19,9 @@
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.5.13",
     "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.0",
+    "nodemon": "^1.19.1"
   }
 }
