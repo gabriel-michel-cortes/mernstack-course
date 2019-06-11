@@ -55,6 +55,7 @@ router.post(
 					id: user.id
 				}
 			};
+			console.log(payload)
 			jwt.sign(
 				payload,
 				config.get('jwtSecret'),
